@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     String noun1 = mNoun1EditText.getText().toString();
+//                    if (noun1.equals("")) {
+//
+//                    }
                     String place1 = mPlace1EditText.getText().toString();
                     String pluralNoun1 = mPluralNoun1EditText.getText().toString();
                     String adj1 = mAdj1EditText.getText().toString();
