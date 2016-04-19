@@ -7,10 +7,79 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.guest.bonkerstories.MainActivity">
+    tools:context="com.example.guest.bonkerstories.MainActivity"
+    android:background="@color/colorPrimaryLight">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Welcome to Bonker Stories! Fill in the blanks with the correct part of speech and press the button to see a bonkers story!"
+        android:id="@+id/introTextView"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noun1EditText"
+        android:layout_below="@+id/introTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:hint="NOUN" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/place1EditText"
+        android:layout_below="@+id/noun1EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="PLACE" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pluralNoun1EditText"
+        android:layout_below="@+id/place1EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="PLURAL NOUN" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adj1EditText"
+        android:layout_below="@+id/pluralNoun1EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="ADJECTIVE" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noun2EditText"
+        android:layout_below="@+id/adj1EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="NOUN" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pastVerb1EditText"
+        android:layout_below="@+id/noun2EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="VERB PAST TENSE" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/holiday1EditText"
+        android:layout_below="@+id/pastVerb1EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="HOLIDAY" />
 </RelativeLayout>
