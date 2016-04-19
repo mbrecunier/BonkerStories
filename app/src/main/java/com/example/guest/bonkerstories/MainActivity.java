@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
                     String holiday1 = mHoliday1EditText.getText().toString();
                     Log.d(TAG, noun1 + place1 + pluralNoun1 + adj1 + noun2 + pastVerb1 + holiday1);
                     Intent intent = new Intent(MainActivity.this, StoryActivity.class);
+                    intent.putExtra("noun1", noun1);
+                    intent.putExtra("place1", place1);
+                    intent.putExtra("pluralNoun1", pluralNoun1);
+                    intent.putExtra("adj1", adj1);
+                    intent.putExtra("noun2", noun2);
+                    intent.putExtra("pastVerb1", pastVerb1);
+                    intent.putExtra("holiday1", holiday1);
                     startActivity(intent);
                 }
             });
